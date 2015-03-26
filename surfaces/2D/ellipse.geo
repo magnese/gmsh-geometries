@@ -1,0 +1,16 @@
+a = 5;
+b = 2;
+cli = 0.01;
+Point (1) = {0, 0, 0, cli};
+Point (2) = {a, 0, 0, cli};
+Point (3) = {0, b, 0, cli};
+Point (4) = {-a, 0, 0, cli};
+Point (5) = {0, -b, 0, cli};
+Ellipse(1) = {2, 1, 2, 3};
+Ellipse(2) = {3, 1, 3, 4};
+Ellipse(3) = {4, 1, 4, 5};
+Ellipse(4) = {5, 1, 2, 2};
+Physical Line(1) = {1, 2, 3, 4};
+Line Loop(1) = {1, 2, 3, 4};
+Ruled Surface(1) = {1};
+Physical Surface(1) = {1};

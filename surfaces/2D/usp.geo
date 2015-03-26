@@ -1,0 +1,14 @@
+cli = 1.0;
+r= 0.075;
+Point (1) = {0, r, 0, cli};
+Point (2) = {-r, 0, 0, cli};
+Point (3) = {r, 0, 0, cli};
+Point (4) = {0, 0, 0, cli};
+Line (1) = {1, 2};
+Line (2) = {3, 1};
+Circle(3) = {2, 4, 3};
+Transfinite Line {3} = 200 Using Progression 1;
+Physical Line(4) = {1, 2, 3};
+Line Loop(5) = {1, 3, 2};
+Ruled Surface(6) = {5};
+Physical Surface(7) = {6};

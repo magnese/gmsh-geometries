@@ -1,10 +1,13 @@
 cli = 0.1;
+cx = 0.0;
+cy = 0.0;
+cz = 0.0;
 a = 1.0;
 b = 1.0;
-Point(1) = {-a, -b, 0, cli};
-Point(2) = {a, -b, 0, cli};
-Point(3) = {a, b, 0, cli};
-Point(4) = {-a, b, 0, cli};
+Point(1) = {cx-a, cy-b, cz, cli};
+Point(2) = {cx+a, cy-b, cz, cli};
+Point(3) = {cx+a, cy+b, cz, cli};
+Point(4) = {cx-a, cy+b, cz, cli};
 Line(1) = {4, 3};
 Line(2) = {3, 2};
 Line(3) = {2, 1};

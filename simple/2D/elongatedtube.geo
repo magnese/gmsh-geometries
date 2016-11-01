@@ -19,6 +19,6 @@ Line Loop(9) = {1, 2, 3, 4};
 Ruled Surface(10) = {9};
 Line Loop(11) = {5, 6, -2};
 Ruled Surface(12) = {11};
-Line Loop(13) = {4, -8, -7};
+Line Loop(13) = {7, 8, -4};
 Ruled Surface(14) = {13};
 Physical Surface(1) = {10, 12, 14};
